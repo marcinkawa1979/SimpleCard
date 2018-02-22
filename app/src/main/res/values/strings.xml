@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimpleCard</string>
+    <string name="name">Bike Shop and Service</string>
+    <string name="description">Give your bike a NEW live.</string>
+    <string name="phone_number">555 655 755</string>
+    <string name="facebook_link">\@BikeShop</string>
+    <string name="email">bikeshop@gmail.com</string>
+    <string name="www">www.bikeshop.com</string>
+    <string name="place_town">Cracow</string>
+    <string name="place_street">Klonowa Street 18</string>
+    <string name="open">Open: 9:00 - 18:00</string>
+    <string name="closed">Sunday: We cycle.</string>
+</resources>

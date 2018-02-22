@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.simplecard.MainActivity"
+    android:background="@color/main_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/basic_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/title"
+            android:text="@string/name" />
+
+        <ImageView
+            android:layout_width="335dp"
+            android:layout_height="211dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bike_2"
+            android:padding="@dimen/basic_padding" />
+
+        <TextView
+            style="@style/title"
+            android:fontFamily="casual"
+            android:text="@string/description" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin20"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/TextViewContact"
+                    android:autoLink="phone"
+                    android:drawableStart="@drawable/telefon32"
+                    android:linksClickable="true"
+                    android:text="@string/phone_number" />
+
+                <TextView
+                    android:id="@+id/facebok"
+                    style="@style/TextViewContact"
+                    android:autoLink="web"
+                    android:drawableStart="@drawable/facebook32"
+                    android:linksClickable="true"
+                    android:text="@string/facebook_link" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/TextViewContact"
+                    android:autoLink="email"
+                    android:drawableStart="@drawable/email32"
+                    android:linksClickable="true"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/www"
+                    style="@style/TextViewContact"
+                    android:autoLink="web"
+                    android:drawableStart="@drawable/domena32"
+                    android:linksClickable="true"
+                    android:text="@string/www"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewAddress"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:text="@string/place_town" />
+
+                <TextView
+                    style="@style/TextViewAddress"
+                    android:text="@string/place_street" />
+
+                <TextView
+                    style="@style/TextViewAddress"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:text="@string/open" />
+
+                <TextView
+                    style="@style/TextViewAddress"
+                    android:text="@string/closed"
+                    android:drawableBottom="@drawable/kolarstwo32"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
